@@ -1,0 +1,40 @@
+.Box {
+  border: 1px solid #333;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.Box__coordinates {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.Box__coordinates pre {
+  user-select: none;
+}
+
+.Box__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.Box__crosshair-x {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.Box__crosshair-y {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}

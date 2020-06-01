@@ -13,23 +13,6 @@ h1 {
   text-align: center;
 }
 
-.Box {
-  border: 1px solid #333;
-  background-color: white;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.Box__coordinates {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.Box__coordinates pre {
-  user-select: none;
-}
-
 main {
   display: flex;
   height: 100%;
@@ -37,71 +20,6 @@ main {
 
 .label {
   font-weight: bold;
-}
-
-.ProblemArea {
-  background-color: #333;
-  color: #ddd;
-  padding: 20px;
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 350px;
-}
-
-.ProblemArea pre {
-  border-radius: 6px;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  font-size: 18px;
-}
-
-.SolutionArea {
-  background-color: #eee;
-  padding: 20px;
-  flex: 3;
-}
-
-.SolutionArea__origin {
-  border: 2px dashed black;
-  box-sizing: border-box;
-}
-
-.SolutionArea__goal {
-  border: 2px solid black;
-  box-sizing: border-box;
-  /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TjADhpRp/AAAAGklEQVR4nGMwbGD438BQfwCMgGwwCWFEMwAAsOULhe+VeS4AAAAASUVORK5CYII="); */
-  /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TSgB8BWq3AAAAEUlEQVR4nGNgYGCob8COGBgAd6IH+Z5zRiIAAAAASUVORK5CYII="); */
-  /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TFwBzEEmuAAAAEUlEQVR4nGNgYGCob8COGBgAd6IH+Z5zRiIAAAAASUVORK5CYII="); */
-  /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TABKFKrxwAAAAJElEQVR4nGPgcBJoUeRwYIAATLoBTB/AKT+qjjJ1sPD/DwYHAIyhHgmoYxtxAAAAAElFTkSuQmCC"); */
-  /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TABqL8TRCAAAANUlEQVR4nGPgcBJoUeRwYGBwEGBhZADSYICgG8D0AQxxdBqsgpGwulHzoDQ0vGHh/x8MDgAA524ftzBV7QwAAAAASUVORK5CYII="); */
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TABqL8TRCAAAANUlEQVR4nGPgcBJoUeRwYGBwEGBhZECiwcCBoQFMH4DzcdEPQBQzYXUj3jy0cIaF/38wOAAA3eMg6ZGs/FMAAAAASUVORK5CYII=");
-  background-position: -2px -2px;
-  position: relative;
-}
-
-.SolutionArea__h-center {
-  content: "";
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  background-color: black;
-  opacity: 0.25;
-}
-
-.SolutionArea__v-center {
-  content: "";
-  width: 1px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  background-color: black;
-  opacity: 0.25;
 }
 
 button {

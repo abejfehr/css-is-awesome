@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from "react";
 import "./App.css";
 import "react-resizable/css/styles.css";
-import { Box } from "./components/Box";
-import { ProblemArea } from "./components/ProblemArea";
-import { levels } from "./levels";
+import { Puzzle } from "./components/Puzzle/";
+import { Sidebar } from "./components/Sidebar/";
+import { levels } from "./data";
 import { useSceneManager } from "./hooks/useSceneManager";
 
 const INITIAL_LEVEL = 1;
@@ -28,41 +28,21 @@ const App = () => {
     setScene(levels[sceneIndex].boxes, levels[sceneIndex].goal);
   };
 
-  const reset = () => {
+  const handleReset = () => {
     setScene(levels[sceneIndex].boxes, levels[sceneIndex].goal);
     setRng(Math.random().toString(36).substring(7));
   };
 
   return (
     <main>
-      <ProblemArea level={levels[sceneIndex]} onSubmit={handleLevelSubmit} />
-      <section className="SolutionArea">
-        Level {sceneIndex + 1}
-        <div
-          className="SolutionArea__goal"
-          style={{
-            width: levels[sceneIndex].canvasWidth,
-            height: levels[sceneIndex].canvasHeight,
-          }}
-        >
-          <div className="SolutionArea__v-center"></div>
-          <div className="SolutionArea__h-center"></div>
-          {levels[sceneIndex].boxes?.map((box, index) => (
-            <Box
-              key={`${sceneIndex}-${index}-${rng}`}
-              passedClassName={box.className}
-              label={`.${box.className}`}
-              x={box.x}
-              y={box.y}
-              width={box.width}
-              height={box.height}
-              resizable={box.resizable}
-              onInput={updateScene}
-            />
-          ))}
-        </div>
-        <button onClick={reset}>reset</button>
-      </section>
+      <Sidebar level={levels[sceneIndex]} onSubmit={handleLevelSubmit} />
+      <Puzzle
+        rng={rng}
+        level={levels[sceneIndex]}
+        sceneIndex={sceneIndex}
+        onInput={updateScene}
+        onReset={handleReset}
+      />
     </main>
   );
 };

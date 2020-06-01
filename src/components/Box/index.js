@@ -1,5 +1,6 @@
 import React, { useCallback, useRef, useState } from "react";
 import { Rnd } from "react-rnd";
+import "./index.css";
 
 export const Box = ({
   width: _width = 100,
@@ -104,6 +105,10 @@ export const Box = ({
       bounds="parent"
       {...resizeProps}
     >
+      {/* <div className="Box__container"> */}
+      <div className="Box__crosshair-x"></div>
+      <div className="Box__crosshair-y"></div>
+      {/* </div> */}
       <div className="Box__coordinates">
         <pre>{label}</pre>
         <pre>

@@ -1,0 +1,10 @@
+- Add a starting state
+- Think of a final empty state (confetti?)
+- Add something for wrapping
+- Prevent position from getting out of sync
+- Add some kind of progress indication
+- Show some context at the end of a level
+- Make boxes semi-transparent (colours for occlusion?)
+- Label main container
+- Hint button
+- Add mobile support
