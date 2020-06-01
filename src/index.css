@@ -79,6 +79,29 @@ main {
   /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TABqL8TRCAAAANUlEQVR4nGPgcBJoUeRwYGBwEGBhZADSYICgG8D0AQxxdBqsgpGwulHzoDQ0vGHh/x8MDgAA524ftzBV7QwAAAAASUVORK5CYII="); */
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyAQMAAAAk8RryAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TABqL8TRCAAAANUlEQVR4nGPgcBJoUeRwYGBwEGBhZECiwcCBoQFMH4DzcdEPQBQzYXUj3jy0cIaF/38wOAAA3eMg6ZGs/FMAAAAASUVORK5CYII=");
   background-position: -2px -2px;
+  position: relative;
+}
+
+.SolutionArea__h-center {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: black;
+  opacity: 0.25;
+}
+
+.SolutionArea__v-center {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: black;
+  opacity: 0.25;
 }
 
 button {

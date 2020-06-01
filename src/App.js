@@ -45,6 +45,8 @@ const App = () => {
             height: levels[sceneIndex].canvasHeight,
           }}
         >
+          <div className="SolutionArea__v-center"></div>
+          <div className="SolutionArea__h-center"></div>
           {levels[sceneIndex].boxes?.map((box, index) => (
             <Box
               key={`${sceneIndex}-${index}-${rng}`}
