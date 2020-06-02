@@ -1,5 +1,5 @@
 .Sidebar {
-  background-color: #333;
+  background-color: var(--sidebar-color);
   color: #ddd;
   padding: 20px;
   align-items: stretch;
@@ -16,4 +16,19 @@
   color: white;
   padding: 10px;
   font-size: 18px;
+}
+
+.Sidebar__header {
+  font-family: "Bebas Neue", cursive;
+  font-size: 50px;
+  margin: 10px 10px 30px;
+  text-align: center;
+}
+
+.Sidebar__subtext {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }

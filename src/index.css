@@ -1,16 +1,13 @@
+:root {
+  --sidebar-color: #142d4c;
+}
+
 html,
 body,
 #root {
   margin: 0;
   height: 100%;
   font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 50px;
-  margin: 10px 10px 30px;
-  text-align: center;
 }
 
 main {

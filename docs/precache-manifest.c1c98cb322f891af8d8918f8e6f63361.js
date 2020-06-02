@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd5e719b0f430cccf3324262352ee272",
+    "revision": "5357ab3173fec563add6865b7801cba2",
     "url": "/weird-flex-but-ok/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/weird-flex-but-ok/static/css/2.38447d4d.chunk.css"
   },
   {
-    "revision": "6c2571bc76b02ae3a9a1",
-    "url": "/weird-flex-but-ok/static/css/main.295e2af1.chunk.css"
+    "revision": "10be426c6e88d1465bbc",
+    "url": "/weird-flex-but-ok/static/css/main.62c2f173.chunk.css"
   },
   {
     "revision": "93adeb0e08dc1b391a0f",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/weird-flex-but-ok/static/js/2.9ce8fdfd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6c2571bc76b02ae3a9a1",
-    "url": "/weird-flex-but-ok/static/js/main.6b35ccd3.chunk.js"
+    "revision": "10be426c6e88d1465bbc",
+    "url": "/weird-flex-but-ok/static/js/main.fcad36b9.chunk.js"
   },
   {
     "revision": "0717a8ad9b54c6244037",

@@ -2,13 +2,24 @@ import React, { useState, useCallback } from "react";
 import "./App.css";
 import "react-resizable/css/styles.css";
 import { Puzzle } from "./components/Puzzle/";
-import { Sidebar } from "./components/Sidebar/";
+import {
+  Sidebar,
+  SidebarContents,
+  SidebarIntroduction,
+  SidebarComplete,
+} from "./components/Sidebar/";
 import { levels } from "./data";
 import { useSceneManager } from "./hooks/useSceneManager";
 
 const INITIAL_LEVEL = 1;
 
 const App = () => {
+  // Whether or not to show the intro screen
+  const [introduction, setIntroduction] = useState(true);
+
+  // Whether or not to show the final screen
+  const [complete, setComplete] = useState(false);
+
   const [sceneIndex, setSceneIndex] = useState(INITIAL_LEVEL - 1);
   const [isMatch, updateScene, setScene] = useSceneManager(
     levels[sceneIndex].boxes,
@@ -17,8 +28,17 @@ const App = () => {
   const [rng, setRng] = useState(Math.random().toString(36).substring(7));
 
   const handleLevelSubmit = useCallback(() => {
+    if (introduction) {
+      setIntroduction(false);
+      return;
+    }
+
     // If it's a win, proceed
     if (isMatch) {
+      if (sceneIndex + 1 === levels.length) {
+        setComplete(true);
+        return;
+      }
       goTo((sceneIndex + 1) % levels.length);
     }
   }, [sceneIndex, isMatch]);
@@ -33,9 +53,25 @@ const App = () => {
     setRng(Math.random().toString(36).substring(7));
   };
 
+  const getSubmitText = () => {
+    if (introduction) {
+      return "Begin";
+    }
+    if (complete) {
+      return null;
+    }
+    return "Submit";
+  };
+
   return (
     <main>
-      <Sidebar level={levels[sceneIndex]} onSubmit={handleLevelSubmit} />
+      <Sidebar onSubmit={handleLevelSubmit} submitText={getSubmitText()}>
+        {introduction && <SidebarIntroduction />}
+        {!introduction && !complete && (
+          <SidebarContents level={levels[sceneIndex]} />
+        )}
+        {complete && <SidebarComplete />}
+      </Sidebar>
       <Puzzle
         rng={rng}
         level={levels[sceneIndex]}

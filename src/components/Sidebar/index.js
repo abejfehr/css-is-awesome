@@ -2,19 +2,46 @@ import React from "react";
 import Highlight from "react-highlight";
 import "./index.css";
 
-export const Sidebar = ({ level, onSubmit }) => {
+export const Sidebar = ({ onSubmit, submitText, children }) => {
   return (
     <section className="Sidebar">
       <div>
         <header>
-          <h1>Weird flex but OK</h1>
+          <h1 className="Sidebar__header">Weird flex but OK</h1>
+          <p className="Sidebar__subtext">
+            Put your CSS skills to the test in this CSS puzzle game
+          </p>
         </header>
-        <span className="label">CSS</span>
-        <Highlight className="css">{level.css.trim()}</Highlight>
-        <span className="label">HTML</span>
-        <Highlight className="html">{level.html.trim()}</Highlight>
+        {children}
       </div>
-      <button onClick={onSubmit}>Submit</button>
+      {submitText && <button onClick={onSubmit}>{submitText}</button>}
     </section>
   );
 };
+
+export const SidebarContents = ({ level }) => (
+  <>
+    <span className="label">CSS</span>
+    <Highlight className="css">{level.css.trim()}</Highlight>
+    <span className="label">HTML</span>
+    <Highlight className="html">{level.html.trim()}</Highlight>
+  </>
+);
+
+export const SidebarIntroduction = () => (
+  <>
+    <p>Welcome to this ridiculous CSS puzzle!</p>
+    <p>
+      The goal of this game is to practice CSS by dragging and resizing boxes to
+      match how they should appear, given some HTML and CSS.
+    </p>
+  </>
+);
+
+export const SidebarComplete = () => (
+  <>
+    <h2>Congratulations!</h2>
+    <p>You've beaten every level that's currently in the game.</p>
+    <p>Check back for more content in the future!</p>
+  </>
+);
