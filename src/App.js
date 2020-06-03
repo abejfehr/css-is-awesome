@@ -8,6 +8,7 @@ import {
   SidebarIntroduction,
   SidebarComplete,
 } from "./components/Sidebar/";
+import { Indicator } from "./components/Indicator";
 import { levels } from "./data";
 import { useSceneManager } from "./hooks/useSceneManager";
 
@@ -21,7 +22,7 @@ const App = () => {
   const [complete, setComplete] = useState(false);
 
   const [sceneIndex, setSceneIndex] = useState(INITIAL_LEVEL - 1);
-  const [isMatch, updateScene, setScene] = useSceneManager(
+  const [isMatch, isDirty, updateScene, setScene] = useSceneManager(
     levels[sceneIndex].boxes,
     levels[sceneIndex].goal
   );
@@ -71,6 +72,9 @@ const App = () => {
           <SidebarContents level={levels[sceneIndex]} />
         )}
         {complete && <SidebarComplete />}
+        {!complete && !introduction && isDirty && (
+          <Indicator correct={isMatch} />
+        )}
       </Sidebar>
       <Puzzle
         rng={rng}

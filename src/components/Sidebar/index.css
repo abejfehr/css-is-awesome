@@ -1,6 +1,6 @@
 .Sidebar {
-  background-color: var(--sidebar-color);
-  color: #ddd;
+  background-color: var(--dark-bg-color);
+  color: var(--light-text-color);
   padding: 20px;
   align-items: stretch;
   display: flex;
@@ -8,14 +8,6 @@
   justify-content: space-between;
   min-width: 350px;
   max-width: 350px;
-}
-
-.Sidebar pre {
-  border-radius: 6px;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  font-size: 18px;
 }
 
 .Sidebar__header {

@@ -1,16 +1,16 @@
 .SolutionArea {
-  background-color: #eee;
+  background-color: var(--light-bg-color);
   padding: 20px;
   flex: 3;
 }
 
 .SolutionArea__origin {
-  border: 2px dashed black;
+  border: 2px dashed var(--dark-text-color);
   box-sizing: border-box;
 }
 
 .SolutionArea__goal {
-  border: 2px solid black;
+  border: 2px solid var(--dark-text-color);
   box-sizing: border-box;
   /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TjADhpRp/AAAAGklEQVR4nGMwbGD438BQfwCMgGwwCWFEMwAAsOULhe+VeS4AAAAASUVORK5CYII="); */
   /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TSgB8BWq3AAAAEUlEQVR4nGNgYGCob8COGBgAd6IH+Z5zRiIAAAAASUVORK5CYII="); */
@@ -29,7 +29,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  background-color: black;
+  background-color: var(--dark-text-color);
   opacity: 0.25;
 }
 
@@ -40,6 +40,6 @@
   position: absolute;
   top: 0;
   left: 50%;
-  background-color: black;
+  background-color: var(--dark-text-color);
   opacity: 0.25;
 }

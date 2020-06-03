@@ -10,6 +10,7 @@ const transformScene = (scene) =>
 
 export const useSceneManager = (_scene, _goal) => {
   const [isMatch, setMatch] = useState(false);
+  const [isDirty, setDirty] = useState(false);
   const scene = useRef(transformScene(_scene));
   const initialScene = useRef(transformScene(_scene));
   const referenceScene = useRef(transformScene(_goal));
@@ -30,6 +31,9 @@ export const useSceneManager = (_scene, _goal) => {
         differenceWith(scene.current, referenceScene.current, isEqual)
           .length === 0
       );
+      if (!isDirty) {
+        setDirty(true);
+      }
     },
     [scene, initialScene]
   );
@@ -40,9 +44,10 @@ export const useSceneManager = (_scene, _goal) => {
       initialScene.current = transformScene(newScene);
       referenceScene.current = transformScene(newGoalScene);
       setMatch(false);
+      setDirty(false);
     },
     [scene, initialScene]
   );
 
-  return [isMatch, updateScene, setScene];
+  return [isMatch, isDirty, updateScene, setScene];
 };
