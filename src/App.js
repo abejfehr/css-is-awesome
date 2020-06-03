@@ -6,8 +6,8 @@ import {
   Sidebar,
   SidebarContents,
   SidebarIntroduction,
-  SidebarComplete,
 } from "./components/Sidebar/";
+import { Complete } from "./components/Complete";
 import { Indicator } from "./components/Indicator";
 import { levels } from "./data";
 import { useSceneManager } from "./hooks/useSceneManager";
@@ -71,18 +71,20 @@ const App = () => {
         {!introduction && !complete && (
           <SidebarContents level={levels[sceneIndex]} />
         )}
-        {complete && <SidebarComplete />}
         {!complete && !introduction && isDirty && (
           <Indicator correct={isMatch} />
         )}
       </Sidebar>
-      <Puzzle
-        rng={rng}
-        level={levels[sceneIndex]}
-        sceneIndex={sceneIndex}
-        onInput={updateScene}
-        onReset={handleReset}
-      />
+      {!introduction && !complete && (
+        <Puzzle
+          rng={rng}
+          level={levels[sceneIndex]}
+          sceneIndex={sceneIndex}
+          onInput={updateScene}
+          onReset={handleReset}
+        />
+      )}
+      {complete && <Complete />}
     </main>
   );
 };

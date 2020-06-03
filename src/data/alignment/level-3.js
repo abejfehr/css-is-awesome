@@ -7,6 +7,7 @@ export const alignment3 = {
   html: `
 <div class="container">
   <div class="box-1"></div>
+  <div class="box-2"></div>
 </div>`,
   canvasWidth: 400,
   canvasHeight: 400,

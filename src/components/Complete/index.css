@@ -1,0 +1,31 @@
+.Complete {
+  flex: 1;
+  position: relative;
+}
+
+.Complete canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+}
+
+.Complete__header {
+  font-family: "Bebas Neue", cursive;
+  font-size: 108px;
+  color: var(--dark-text-color);
+  text-align: center;
+}
+
+.Complete__text {
+  font-size: 36px;
+  text-align: center;
+  color: var(--dark-text-color);
+}
+
+.Complete__subtext {
+  font-size: 24px;
+  text-align: center;
+  color: var(--dark-text-color);
+}

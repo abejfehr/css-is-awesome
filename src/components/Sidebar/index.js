@@ -37,11 +37,3 @@ export const SidebarIntroduction = () => (
     </p>
   </>
 );
-
-export const SidebarComplete = () => (
-  <>
-    <h2>Congratulations!</h2>
-    <p>You've beaten every level that's currently in the game.</p>
-    <p>Check back for more content in the future!</p>
-  </>
-);

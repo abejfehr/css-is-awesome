@@ -1,4 +1,3 @@
-- Make the ending better (add confetti?)
 - Make better theme for syntax highlighting and everything
 - Label main container
 - Add some kind of progress indication
