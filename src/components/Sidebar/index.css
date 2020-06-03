@@ -13,14 +13,72 @@
 .Sidebar__header {
   font-family: "Bebas Neue", cursive;
   font-size: 50px;
-  margin: 10px 10px 30px;
+  margin: 10px 10px;
   text-align: center;
+}
+
+.Sidebar__header-container {
+  margin-bottom: 50px;
 }
 
 .Sidebar__subtext {
   text-align: center;
+  font-size: 18px;
 }
 
-h2 {
-  text-align: center;
+.PrimaryButton {
+  border: none;
+  position: relative;
+  background-color: var(--light-bg-color);
+  color: var(--dark-bg-color);
+  padding: 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.2s, color 0.2s;
+  width: 100%;
+}
+
+.PrimaryButton:hover:not(:disabled) {
+  background-color: #aaa;
+}
+
+.PrimaryButton:active:not(:disabled) {
+  background-color: #888;
+}
+
+.PrimaryButton:disabled {
+  opacity: 0.5;
+}
+
+.PrimaryButton__contents {
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.SecondaryButton {
+  border: none;
+  background-color: transparent;
+  color: var(--light-text-color);
+  padding: 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.2s, color 0.2s;
+  width: 100%;
+}
+
+.SecondaryButton:hover {
+  color: #aaa;
+  background-color: var(--dark-text-color);
+}
+
+.SecondaryButton:active {
+  color: #888;
+  background-color: var(--dark-text-color);
 }

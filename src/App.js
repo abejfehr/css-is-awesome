@@ -8,7 +8,6 @@ import {
   SidebarIntroduction,
 } from "./components/Sidebar/";
 import { Complete } from "./components/Complete";
-import { Indicator } from "./components/Indicator";
 import { levels } from "./data";
 import { useSceneManager } from "./hooks/useSceneManager";
 
@@ -64,15 +63,40 @@ const App = () => {
     return "Submit";
   };
 
+  const getHeaderText = () => {
+    if (introduction) {
+      return "Weird flex but ok";
+    }
+    if (complete) {
+      return null;
+    }
+    return `Level ${sceneIndex + 1}`;
+  };
+
+  const getSubText = () => {
+    if (introduction) {
+      return "A CSS flexbox puzzle game";
+    }
+    if (complete) {
+      return "";
+    }
+    return levels[sceneIndex].subtext ? `“${levels[sceneIndex].subtext}”` : "";
+  };
+
   return (
     <main>
-      <Sidebar onSubmit={handleLevelSubmit} submitText={getSubmitText()}>
+      <Sidebar
+        isMatch={introduction || isMatch}
+        isDirty={isDirty}
+        onReset={handleReset}
+        onSubmit={handleLevelSubmit}
+        submitText={getSubmitText()}
+        headerText={getHeaderText()}
+        subText={getSubText()}
+      >
         {introduction && <SidebarIntroduction />}
         {!introduction && !complete && (
           <SidebarContents level={levels[sceneIndex]} />
-        )}
-        {!complete && !introduction && isDirty && (
-          <Indicator correct={isMatch} />
         )}
       </Sidebar>
       {!introduction && !complete && (
@@ -81,7 +105,6 @@ const App = () => {
           level={levels[sceneIndex]}
           sceneIndex={sceneIndex}
           onInput={updateScene}
-          onReset={handleReset}
         />
       )}
       {complete && <Complete />}

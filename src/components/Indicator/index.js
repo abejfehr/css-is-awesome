@@ -29,17 +29,21 @@ const Checkmark = ({ className = "" }) => (
   </svg>
 );
 
+export const IndicatorIcon = ({ correct = false }) => (
+  <div
+    className={`Indicator__icon Indicator__icon${
+      correct ? "--correct" : "--incorrect"
+    }`}
+  >
+    <Cross className="Indicator__icon-cross" />
+    <Checkmark className="Indicator__icon-checkmark" />
+  </div>
+);
+
 export const Indicator = ({ correct = false }) => {
   return (
     <div className="Indicator">
-      <div
-        className={`Indicator__icon Indicator__icon${
-          correct ? "--correct" : "--incorrect"
-        }`}
-      >
-        <Cross className="Indicator__icon-cross" />
-        <Checkmark className="Indicator__icon-checkmark" />
-      </div>
+      <IndicatorIcon correct={correct} />
       <div className="Indicator__label">
         {correct
           ? "The solution is correct"

@@ -9,8 +9,14 @@ export const direction3 = {
   <div class="box-1"></div>
   <div class="box-2"></div>
 </div>`,
-  canvasWidth: 400,
-  canvasHeight: 400,
+  container: {
+    subtext: "A twist",
+    className: "container",
+    x: 0,
+    y: 0,
+    width: 400,
+    height: 400,
+  },
   boxes: [
     {
       className: "box-2",

@@ -2,15 +2,15 @@ import React from "react";
 import { Box } from "../Box/";
 import "./index.css";
 
-export const Puzzle = ({ rng, level, sceneIndex, onInput, onReset }) => {
+export const Puzzle = ({ rng, level, sceneIndex, onInput }) => {
   return (
     <section className="SolutionArea">
-      Level {sceneIndex + 1}
+      <pre>{`.${level.container.className}`}</pre>
       <div
         className="SolutionArea__goal"
         style={{
-          width: level.canvasWidth,
-          height: level.canvasHeight,
+          width: level.container.width,
+          height: level.container.height,
         }}
       >
         <div className="SolutionArea__v-center"></div>
@@ -29,7 +29,6 @@ export const Puzzle = ({ rng, level, sceneIndex, onInput, onReset }) => {
           />
         ))}
       </div>
-      <button onClick={onReset}>reset</button>
     </section>
   );
 };

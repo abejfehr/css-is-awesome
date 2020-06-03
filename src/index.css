@@ -25,22 +25,6 @@ main {
   font-weight: bold;
 }
 
-button {
-  border: 1px solid var(--dark-bg-color);
-  background-color: var(--light-bg-color);
-  color: var(--dark-bg-color);
-  padding: 10px;
-  border-radius: 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px;
-  transition: background-color 1s;
-}
-
-button:hover {
-  background-color: #ccc;
-}
-
-button:active {
-  background-color: var(--dark-bg-color);
+p {
+  line-height: 1.4;
 }

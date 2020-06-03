@@ -4,9 +4,8 @@
   flex: 3;
 }
 
-.SolutionArea__origin {
-  border: 2px dashed var(--dark-text-color);
-  box-sizing: border-box;
+.SolutionArea > pre {
+  margin-bottom: 0;
 }
 
 .SolutionArea__goal {
