@@ -1,4 +1,4 @@
-import { sizes } from "./box-model/sizes";
+import boxModel from "./box-model";
 import { direction1 } from "./direction/level-1";
 import { direction2 } from "./direction/level-2";
 import { direction3 } from "./direction/level-3";
@@ -7,7 +7,7 @@ import { alignment2 } from "./alignment/level-2";
 import { alignment3 } from "./alignment/level-3";
 
 export const levels = [
-  sizes,
+  ...boxModel,
   direction1,
   direction2,
   direction3,
