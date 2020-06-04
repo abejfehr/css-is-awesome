@@ -1,3 +1,6 @@
+- Make puzzle area prettier
+- Add box model levels
+- Add positioning levels
 - Make better theme for syntax highlighting and everything
 - Add some kind of progress indication
 - Prevent position from getting out of sync
@@ -12,8 +15,15 @@
 
 Things to test people on:
 
-- flex-wrap;
-- position: absolute;
-- position: sticky;
+- box model
+  - box width/height
+  - margin
+  - padding
+- positioning
+  - position: absolute;
+  - position: sticky;
+- flex
+  - flex-wrap;
+- grid
+  - display: grid;
 - lobotomized owl
-- display: grid;

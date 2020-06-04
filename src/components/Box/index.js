@@ -44,7 +44,7 @@ export const Box = ({
 
       onInput(passedClassName, ~~x, ~~y, ~~width, ~~height);
     },
-    [x, y, width, height]
+    [x, y, width, height, onInput, passedClassName]
   );
 
   const handleResize = useCallback(
@@ -58,25 +58,25 @@ export const Box = ({
 
       onInput(passedClassName, ~~x, ~~y, ~~width, ~~height);
     },
-    [x, y, width, height]
+    [x, y, width, height, onInput, passedClassName]
   );
 
   const handleDragStop = useCallback(() => {
     // Don't use this, it somehow breaks things
     onInput(passedClassName, ~~x, ~~y, ~~width, ~~height);
-  }, [x, y, width, height]);
+  }, [x, y, width, height, onInput, passedClassName]);
 
   const handleResizeStop = useCallback(() => {
     onInput(passedClassName, ~~x, ~~y, ~~width, ~~height);
-  }, [x, y, width, height]);
+  }, [x, y, width, height, onInput, passedClassName]);
 
   let resizeProps = {};
 
   if (resizable) {
-    if (resizable.includes("x")) {
+    if (resizable.includes("x") && !resizable.includes("y")) {
       resizeProps["maxHeight"] = height;
     }
-    if (resizable.includes("y")) {
+    if (resizable.includes("y") && !resizable.includes("x")) {
       resizeProps["maxWidth"] = width;
     }
   } else {

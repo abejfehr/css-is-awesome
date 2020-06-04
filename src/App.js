@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from "react";
 import "./App.css";
-import "react-resizable/css/styles.css";
 import { Puzzle } from "./components/Puzzle/";
 import {
   Sidebar,
@@ -27,6 +26,14 @@ const App = () => {
   );
   const [rng, setRng] = useState(Math.random().toString(36).substring(7));
 
+  const goTo = useCallback(
+    (sceneIndex) => {
+      setSceneIndex(sceneIndex);
+      setScene(levels[sceneIndex].boxes, levels[sceneIndex].goal);
+    },
+    [setScene]
+  );
+
   const handleLevelSubmit = useCallback(() => {
     if (introduction) {
       setIntroduction(false);
@@ -41,12 +48,7 @@ const App = () => {
       }
       goTo((sceneIndex + 1) % levels.length);
     }
-  }, [sceneIndex, isMatch]);
-
-  const goTo = (sceneIndex) => {
-    setSceneIndex(sceneIndex);
-    setScene(levels[sceneIndex].boxes, levels[sceneIndex].goal);
-  };
+  }, [sceneIndex, isMatch, goTo, introduction]);
 
   const handleReset = () => {
     setScene(levels[sceneIndex].boxes, levels[sceneIndex].goal);

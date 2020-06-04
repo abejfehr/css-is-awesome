@@ -1,6 +1,6 @@
 import React from "react";
 import Highlight from "react-highlight";
-import { Indicator, IndicatorIcon } from "../Indicator";
+import { IndicatorIcon } from "../Indicator";
 import "./index.css";
 
 export const Sidebar = ({
