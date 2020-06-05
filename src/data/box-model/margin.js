@@ -1,11 +1,11 @@
 export const margin = {
   name: "Margin",
   css: `
-  .some-box {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-  }
+.some-box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
 `,
   html: `
 <div class="container">

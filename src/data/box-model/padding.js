@@ -1,9 +1,9 @@
 export const padding = {
   name: "Padding",
   css: `
-  .container {
-    padding: 20px;
-  }
+.container {
+  padding: 20px;
+}
 `,
   html: `
 <div class="container">

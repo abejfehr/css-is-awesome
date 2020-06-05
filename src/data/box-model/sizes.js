@@ -1,10 +1,10 @@
 export const sizes = {
   name: "Box sizes",
   css: `
-  .some-box {
-    width: 300px;
-    height: 200px;
-  }
+.some-box {
+  width: 300px;
+  height: 200px;
+}
 `,
   html: `
 <div class="container">

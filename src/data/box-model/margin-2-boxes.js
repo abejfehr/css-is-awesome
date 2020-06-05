@@ -1,16 +1,16 @@
 export const margin2Boxes = {
   name: "Margin w/ 2 boxes",
   css: `
-  .b-1 {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-  }
-  .b-2 {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-  }
+.b-1 {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+.b-2 {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
 `,
   html: `
 <div class="container">

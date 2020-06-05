@@ -1,9 +1,8 @@
 # So you think you know CSS
 
-- Fix weird indentation on the CSS in some levels
-- Add better meta description and title
-- Make it obvious how to play the game
+- Make it more obvious how to play the game
   - Maybe a ghost box that resizes on the first level?
+- Add option to play again after complete
 - Add label to the container box
   - not sure how I want to lay that out yet
 - Add educational links
@@ -18,7 +17,6 @@
 - Add mobile support (or tell people to use desktop)
 - Link to myself somewhere
 - Let people share their progress
-- remove margin from around confetti
 
 Things to test people on:
 
