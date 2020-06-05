@@ -38,3 +38,49 @@
   width: 1px;
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.Box__handle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.2s;
+  transform: translate(-50%, -50%);
+}
+
+.Box:hover .Box__handle {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.Box__handle--top-left {
+  top: 0;
+  left: 0;
+}
+.Box__handle--top-right {
+  top: 0;
+  right: 0;
+}
+.Box__handle--bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.Box__handle--bottom-right {
+  bottom: 0;
+  right: 0;
+}
+.Box__handle--top {
+  top: 0;
+  left: 50%;
+}
+.Box__handle--bottom {
+  bottom: 0;
+  left: 50%;
+}
+.Box__handle--left {
+  top: 50%;
+  left: 0;
+}
+.Box__handle--right {
+  top: 50%;
+  right: 0;
+}

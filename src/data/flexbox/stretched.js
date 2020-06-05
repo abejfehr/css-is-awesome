@@ -1,16 +1,17 @@
-export const direction2 = {
-  name: "Direction 2",
+import { TAGS, CATEGORIES } from "../../constants";
+
+export const stretched = {
+  name: "Alignment 3",
   css: `
 .container {
   display: flex;
-  flex-direction: column;
+  align-items: stretch;
 }`,
   html: `
 <div class="container">
   <div class="box-1"></div>
   <div class="box-2"></div>
 </div>`,
-  subtext: "The basics",
   container: {
     className: "container",
     x: 0,
@@ -20,20 +21,20 @@ export const direction2 = {
   },
   boxes: [
     {
-      className: "box-2",
+      className: "box-1",
       x: 0,
       y: 0,
       width: 200,
       height: 200,
-      resizable: false,
+      resizable: ["y"],
     },
     {
-      className: "box-1",
+      className: "box-2",
       x: 100,
       y: 100,
       width: 200,
       height: 200,
-      resizable: false,
+      resizable: ["y"],
     },
   ],
   goal: [
@@ -42,14 +43,15 @@ export const direction2 = {
       x: 0,
       y: 0,
       width: 200,
-      height: 200,
+      height: 400,
     },
     {
       className: "box-2",
-      x: 0,
-      y: 200,
+      x: 200,
+      y: 0,
       width: 200,
-      height: 200,
+      height: 400,
     },
   ],
+  category: CATEGORIES.ALIGNMENT,
 };

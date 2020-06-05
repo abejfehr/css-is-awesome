@@ -1,6 +1,7 @@
 import React from "react";
 import Highlight from "react-highlight";
 import { IndicatorIcon } from "../Indicator";
+import { RESOURCES_BY_TAG } from "../../constants";
 import "./index.css";
 
 export const Sidebar = ({
@@ -54,12 +55,34 @@ export const Sidebar = ({
   );
 };
 
+const getResourcesForTags = (tags = []) => {
+  let resources = [];
+
+  tags.forEach((tag) => {
+    resources = [...resources, ...RESOURCES_BY_TAG[tag]];
+  });
+
+  return resources;
+};
+
 export const SidebarContents = ({ level }) => (
   <>
     <span className="label">CSS</span>
     <Highlight className="css">{level.css.trim()}</Highlight>
     <span className="label">HTML</span>
     <Highlight className="html">{level.html.trim()}</Highlight>
+    {(level.tags || []).length > 0 && (
+      <div className="ResourceList">
+        <span className="label">Resources</span>
+        <ul>
+          {getResourcesForTags(level.tags).map((resource) => (
+            <li>
+              <b>{resource.title}</b>: <a href={resource.url}>{resource.url}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
   </>
 );
 

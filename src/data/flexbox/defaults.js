@@ -1,17 +1,18 @@
-export const alignment1 = {
-  name: "Alignment 1",
+import { TAGS, CATEGORIES } from "../../constants";
+
+export const defaults = {
+  name: "Direction 1",
   css: `
 .container {
   display: flex;
-  align-items: center;
 }`,
   html: `
 <div class="container">
   <div class="box-1"></div>
   <div class="box-2"></div>
 </div>`,
+  subtext: "The basics",
   container: {
-    subtext: "Lined up",
     className: "container",
     x: 0,
     y: 0,
@@ -23,8 +24,8 @@ export const alignment1 = {
       className: "box-2",
       x: 0,
       y: 0,
-      width: 140,
-      height: 260,
+      width: 200,
+      height: 200,
       resizable: false,
     },
     {
@@ -40,16 +41,17 @@ export const alignment1 = {
     {
       className: "box-1",
       x: 0,
-      y: 100,
+      y: 0,
       width: 200,
       height: 200,
     },
     {
       className: "box-2",
       x: 200,
-      y: 70,
-      width: 140,
-      height: 260,
+      y: 0,
+      width: 200,
+      height: 200,
     },
   ],
+  category: CATEGORIES.DIRECTION,
 };

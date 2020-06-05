@@ -1,3 +1,5 @@
+import { TAGS, CATEGORIES } from "../../constants";
+
 export const sizes = {
   name: "Box sizes",
   css: `
@@ -37,4 +39,5 @@ export const sizes = {
       height: 200,
     },
   ],
+  category: CATEGORIES.SIZING,
 };

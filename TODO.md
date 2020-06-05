@@ -1,15 +1,17 @@
 # So you think you know CSS
 
-- Make it more obvious how to play the game
-  - Maybe a ghost box that resizes on the first level?
-- Add option to play again after complete
-- Add label to the container box
-  - not sure how I want to lay that out yet
+WIP
+- Rename the game something else
 - Add educational links
   - w3c
   - blog posts
+
+TODO
+- Add option to play again after complete
+- Maybe put the box coordinates/name on the right side in a "properties" area?
+- Add label to the container box
+  - not sure how I want to lay that out yet
 - Add links to codepens/jsfiddles of complete examples
-- Make better theme for syntax highlighting and everything
 - Prevent position from getting out of sync
 - Show some context at the end of a level
   - Examples of what could've been built with it maybe?
@@ -17,6 +19,12 @@
 - Add mobile support (or tell people to use desktop)
 - Link to myself somewhere
 - Let people share their progress
+
+TODIDN'T
+- Make boxes be bounded by other boxes
+  - Putting this on hold right now since it's a weird experience if you move the parent outside the child
+- Add handles to the boxes to indicate affordances for dragging/resizing
+  - Putting this on hold for now
 
 Things to test people on:
 

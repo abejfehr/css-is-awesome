@@ -1,16 +1,19 @@
-export const direction1 = {
-  name: "Direction 1",
+import { TAGS, CATEGORIES } from "../../constants";
+
+export const centerAligned = {
+  name: "Center Aligned",
   css: `
 .container {
   display: flex;
+  align-items: center;
 }`,
   html: `
 <div class="container">
   <div class="box-1"></div>
   <div class="box-2"></div>
 </div>`,
-  subtext: "The basics",
   container: {
+    subtext: "Lined up",
     className: "container",
     x: 0,
     y: 0,
@@ -22,8 +25,8 @@ export const direction1 = {
       className: "box-2",
       x: 0,
       y: 0,
-      width: 200,
-      height: 200,
+      width: 140,
+      height: 260,
       resizable: false,
     },
     {
@@ -39,16 +42,18 @@ export const direction1 = {
     {
       className: "box-1",
       x: 0,
-      y: 0,
+      y: 100,
       width: 200,
       height: 200,
     },
     {
       className: "box-2",
       x: 200,
-      y: 0,
-      width: 200,
-      height: 200,
+      y: 70,
+      width: 140,
+      height: 260,
     },
   ],
+  tags: [TAGS.FLEXBOX],
+  category: CATEGORIES.ALIGNMENT,
 };

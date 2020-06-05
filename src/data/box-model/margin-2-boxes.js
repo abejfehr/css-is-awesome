@@ -1,3 +1,5 @@
+import { TAGS, CATEGORIES } from "../../constants";
+
 export const margin2Boxes = {
   name: "Margin w/ 2 boxes",
   css: `
@@ -61,4 +63,5 @@ export const margin2Boxes = {
       resizable: ["x", "y"],
     },
   ],
+  category: CATEGORIES.SPACING,
 };

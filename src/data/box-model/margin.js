@@ -1,3 +1,5 @@
+import { TAGS, CATEGORIES } from "../../constants";
+
 export const margin = {
   name: "Margin",
   css: `
@@ -38,4 +40,5 @@ export const margin = {
       height: 200,
     },
   ],
+  category: CATEGORIES.SPACING,
 };

@@ -72,6 +72,7 @@ const App = () => {
 
   const getHeaderText = () => {
     if (introduction) {
+      // TODO: Render the title thing here
       return "Weird flex but ok";
     }
     if (complete) {
@@ -118,7 +119,9 @@ const App = () => {
                       <optgroup key={i} label={chapter.title}>
                         {chapter.levels.map((lvl, j) => (
                           <option key={`${i}-${j}`} value={`${i}-${j}`}>
-                            {lvl.name}
+                            {`Puzzle ${j + 1}${
+                              lvl.category ? ` - ${lvl.category}` : ""
+                            }`}
                           </option>
                         ))}
                       </optgroup>

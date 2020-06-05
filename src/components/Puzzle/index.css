@@ -1,5 +1,7 @@
-.Puzzle > pre {
-  margin-bottom: 0;
+.Puzzle__instruction {
+  font-size: 20px;
+  margin: 20px;
+  color: var(--dark-text-color);
 }
 
 .Puzzle__border {

@@ -1,4 +1,6 @@
-export const direction3 = {
+import { TAGS, CATEGORIES } from "../../constants";
+
+export const rowReverse = {
   name: "Direction 3",
   css: `
 .container {
@@ -52,4 +54,5 @@ export const direction3 = {
       height: 200,
     },
   ],
+  category: CATEGORIES.DIRECTION,
 };

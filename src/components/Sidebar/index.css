@@ -84,3 +84,7 @@
   color: #888;
   background-color: var(--dark-text-color);
 }
+
+.ResourceList a {
+  color: var(--light-text-color);
+}

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/weird-flex-but-ok/static/css/main.ea346f82.chunk.css",
-    "main.js": "/weird-flex-but-ok/static/js/main.b040cd37.chunk.js",
-    "main.js.map": "/weird-flex-but-ok/static/js/main.b040cd37.chunk.js.map",
-    "runtime-main.js": "/weird-flex-but-ok/static/js/runtime-main.234621d8.js",
-    "runtime-main.js.map": "/weird-flex-but-ok/static/js/runtime-main.234621d8.js.map",
-    "static/js/2.eebccfb3.chunk.js": "/weird-flex-but-ok/static/js/2.eebccfb3.chunk.js",
-    "static/js/2.eebccfb3.chunk.js.map": "/weird-flex-but-ok/static/js/2.eebccfb3.chunk.js.map",
-    "index.html": "/weird-flex-but-ok/index.html",
-    "precache-manifest.5d0215b7008f806229fb4f15c789b49d.js": "/weird-flex-but-ok/precache-manifest.5d0215b7008f806229fb4f15c789b49d.js",
-    "service-worker.js": "/weird-flex-but-ok/service-worker.js",
-    "static/css/main.ea346f82.chunk.css.map": "/weird-flex-but-ok/static/css/main.ea346f82.chunk.css.map",
-    "static/js/2.eebccfb3.chunk.js.LICENSE.txt": "/weird-flex-but-ok/static/js/2.eebccfb3.chunk.js.LICENSE.txt"
+    "main.css": "/css-is-awesome/static/css/main.b2e44e21.chunk.css",
+    "main.js": "/css-is-awesome/static/js/main.d3eee2a5.chunk.js",
+    "main.js.map": "/css-is-awesome/static/js/main.d3eee2a5.chunk.js.map",
+    "runtime-main.js": "/css-is-awesome/static/js/runtime-main.5fadb7a4.js",
+    "runtime-main.js.map": "/css-is-awesome/static/js/runtime-main.5fadb7a4.js.map",
+    "static/js/2.05e6a9ba.chunk.js": "/css-is-awesome/static/js/2.05e6a9ba.chunk.js",
+    "static/js/2.05e6a9ba.chunk.js.map": "/css-is-awesome/static/js/2.05e6a9ba.chunk.js.map",
+    "index.html": "/css-is-awesome/index.html",
+    "precache-manifest.2f08f4f1505dbac006f8cd9b762dfb9c.js": "/css-is-awesome/precache-manifest.2f08f4f1505dbac006f8cd9b762dfb9c.js",
+    "service-worker.js": "/css-is-awesome/service-worker.js",
+    "static/css/main.b2e44e21.chunk.css.map": "/css-is-awesome/static/css/main.b2e44e21.chunk.css.map",
+    "static/js/2.05e6a9ba.chunk.js.LICENSE.txt": "/css-is-awesome/static/js/2.05e6a9ba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.234621d8.js",
-    "static/js/2.eebccfb3.chunk.js",
-    "static/css/main.ea346f82.chunk.css",
-    "static/js/main.b040cd37.chunk.js"
+    "static/js/runtime-main.5fadb7a4.js",
+    "static/js/2.05e6a9ba.chunk.js",
+    "static/css/main.b2e44e21.chunk.css",
+    "static/js/main.d3eee2a5.chunk.js"
   ]
 }

@@ -10,6 +10,7 @@ export const Box = ({
   label,
   resizable = ["x", "y"],
   passedClassName,
+  bounds = "parent",
   onInput = () => {},
 }) => {
   const [x, setX] = useState(_x);
@@ -87,7 +88,7 @@ export const Box = ({
 
   return (
     <Rnd
-      className="Box"
+      className={`Box ${passedClassName}`}
       default={{
         x,
         y,
@@ -102,13 +103,19 @@ export const Box = ({
       onResize={handleResize}
       onResizeStart={putOnTop}
       onResizeStop={handleResizeStop}
-      bounds="parent"
+      bounds={bounds}
       {...resizeProps}
     >
-      {/* <div className="Box__container"> */}
       <div className="Box__crosshair-x"></div>
       <div className="Box__crosshair-y"></div>
-      {/* </div> */}
+      {/* <div className="Box__handle Box__handle--top-left"></div>
+      <div className="Box__handle Box__handle--bottom-left"></div>
+      <div className="Box__handle Box__handle--top-right"></div>
+      <div className="Box__handle Box__handle--bottom-right"></div>
+      <div className="Box__handle Box__handle--top"></div>
+      <div className="Box__handle Box__handle--bottom"></div>
+      <div className="Box__handle Box__handle--left"></div>
+      <div className="Box__handle Box__handle--right"></div> */}
       <div className="Box__coordinates">
         <pre>{label}</pre>
         <pre>

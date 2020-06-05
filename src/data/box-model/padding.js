@@ -1,3 +1,5 @@
+import { TAGS, CATEGORIES } from "../../constants";
+
 export const padding = {
   name: "Padding",
   css: `
@@ -36,4 +38,5 @@ export const padding = {
       height: 200,
     },
   ],
+  category: CATEGORIES.SPACING,
 };
