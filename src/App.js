@@ -77,14 +77,14 @@ const App = () => {
     if (complete) {
       return null;
     }
-    // return `Level ${sceneIndex + 1}`;
+    return chapters[chapterIndex].funnyTitle || "";
   };
 
   const getSubText = () => {
     if (introduction) {
       return "A CSS flexbox puzzle game";
     }
-    return "";
+    return chapters[chapterIndex].funnySubtitle || "";
   };
 
   return (

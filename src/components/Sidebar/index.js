@@ -20,7 +20,10 @@ export const Sidebar = ({
           {headerText && (
             <>
               <h1 className="Sidebar__header">{headerText}</h1>
-              <p className="Sidebar__subtext">{subText}</p>
+              <p
+                className="Sidebar__subtext"
+                dangerouslySetInnerHTML={{ __html: subText }}
+              ></p>
             </>
           )}
         </header>
