@@ -15,8 +15,8 @@ export default [
   margin,
   margin2Boxes,
   padding,
-  corners,
   absolutes,
+  corners,
   absoluteStacked,
   absolute50p,
 ];

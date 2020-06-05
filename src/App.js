@@ -72,8 +72,7 @@ const App = () => {
 
   const getHeaderText = () => {
     if (introduction) {
-      // TODO: Render the title thing here
-      return "Weird flex but ok";
+      return null;
     }
     if (complete) {
       return null;
@@ -83,7 +82,7 @@ const App = () => {
 
   const getSubText = () => {
     if (introduction) {
-      return "A CSS flexbox puzzle game";
+      return 'A CSS puzzle game by <a href="https://www.abefehr.com/">Abe Fehr</a>';
     }
     return chapters[chapterIndex].funnySubtitle || "";
   };
@@ -97,6 +96,7 @@ const App = () => {
         onSubmit={handleLevelSubmit}
         submitText={getSubmitText()}
         headerText={getHeaderText()}
+        isIntroduction={introduction}
         subText={getSubText()}
       >
         {introduction && <SidebarIntroduction />}
@@ -134,6 +134,12 @@ const App = () => {
           </>
         )}
         {complete && <Complete />}
+        {!introduction && !complete && (
+          <div className="Puzzle__instruction">
+            Drag and/or resize the boxes above to match the given HTML+CSS in
+            the left sidebar
+          </div>
+        )}
       </PuzzleContainer>
     </main>
   );

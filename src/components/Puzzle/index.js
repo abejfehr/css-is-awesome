@@ -31,10 +31,6 @@ export const Puzzle = ({ rng, level, onInput }) => {
           ))}
         </div>
       </div>
-      <div className="Puzzle__instruction">
-        Drag and/or resize the boxes above to match the given HTML+CSS in the
-        left sidebar
-      </div>
     </>
   );
 };

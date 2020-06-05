@@ -2,6 +2,11 @@
   font-size: 20px;
   margin: 20px;
   color: var(--dark-text-color);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
 }
 
 .Puzzle__border {

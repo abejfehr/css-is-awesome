@@ -12,20 +12,22 @@ export const Sidebar = ({
   submitText,
   subText,
   headerText,
+  isIntroduction = false,
   children,
 }) => {
   return (
     <section className="Sidebar">
       <div>
         <header className="Sidebar__header-container">
-          {headerText && (
-            <>
-              <h1 className="Sidebar__header">{headerText}</h1>
-              <p
-                className="Sidebar__subtext"
-                dangerouslySetInnerHTML={{ __html: subText }}
-              ></p>
-            </>
+          {isIntroduction && (
+            <h1 className="Sidebar__introduction-header">CSS IS AWESOME</h1>
+          )}
+          {headerText && <h1 className="Sidebar__header">{headerText}</h1>}
+          {(isIntroduction || headerText) && (
+            <p
+              className="Sidebar__subtext"
+              dangerouslySetInnerHTML={{ __html: subText }}
+            ></p>
           )}
         </header>
         {children}

@@ -85,6 +85,19 @@
   background-color: var(--dark-text-color);
 }
 
-.ResourceList a {
+.Sidebar a {
   color: var(--light-text-color);
+}
+
+/* Special header that doesn't comply with the rules of the site */
+.Sidebar__introduction-header {
+  width: 145px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 2px solid var(--light-text-color);
+  font-family: arial;
+  font-weight: normal;
+  overflow: visible;
+  font-size: 45px;
 }
