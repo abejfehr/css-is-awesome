@@ -1,4 +1,5 @@
 export const margin2Boxes = {
+  name: "Margin w/ 2 boxes",
   css: `
   .b-1 {
     width: 200px;

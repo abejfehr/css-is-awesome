@@ -1,10 +1,8 @@
-export const margin = {
-  name: "Margin",
+export const padding = {
+  name: "Padding",
   css: `
-  .some-box {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
+  .container {
+    padding: 20px;
   }
 `,
   html: `
@@ -22,18 +20,18 @@ export const margin = {
   boxes: [
     {
       className: "some-box",
-      x: 0,
-      y: 0,
-      width: 100,
-      height: 100,
-      resizable: ["x", "y"],
+      x: 100,
+      y: 100,
+      width: 200,
+      height: 200,
+      resizable: false,
     },
   ],
   goal: [
     {
       className: "some-box",
-      x: 10,
-      y: 10,
+      x: 20,
+      y: 20,
       width: 200,
       height: 200,
     },

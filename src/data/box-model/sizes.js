@@ -1,4 +1,5 @@
 export const sizes = {
+  name: "Box sizes",
   css: `
   .some-box {
     width: 300px;

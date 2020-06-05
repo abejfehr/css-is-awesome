@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import { startConfetti, stopConfetti } from "../../lib/Confetti";
 import debounce from "lodash/debounce";
 import "./index.css";
@@ -16,17 +16,15 @@ export const Complete = () => {
     canvasRef.current.height = canvasRef.current.clientHeight;
   }, 50);
 
-  useLayoutEffect(
-    () => {
-      startConfetti();
-      handleResizing();
-      window.addEventListener("resize", handleResizing);
-    },
-    () => {
+  useLayoutEffect(() => {
+    startConfetti();
+    handleResizing();
+    window.addEventListener("resize", handleResizing);
+    return () => {
       stopConfetti();
       window.removeEventListener("resize", handleResizing);
-    }
-  );
+    };
+  });
 
   return (
     <div className="Complete">

@@ -1,4 +1,5 @@
 export const alignment2 = {
+  name: "Alignment 2",
   css: `
 .container {
   display: flex;

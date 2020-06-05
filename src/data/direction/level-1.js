@@ -1,4 +1,5 @@
 export const direction1 = {
+  name: "Direction 1",
   css: `
 .container {
   display: flex;
