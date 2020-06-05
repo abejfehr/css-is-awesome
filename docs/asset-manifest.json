@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/weird-flex-but-ok/static/css/main.2091c44b.chunk.css",
-    "main.js": "/weird-flex-but-ok/static/js/main.325df6de.chunk.js",
-    "main.js.map": "/weird-flex-but-ok/static/js/main.325df6de.chunk.js.map",
+    "main.css": "/weird-flex-but-ok/static/css/main.4851373e.chunk.css",
+    "main.js": "/weird-flex-but-ok/static/js/main.c696dac1.chunk.js",
+    "main.js.map": "/weird-flex-but-ok/static/js/main.c696dac1.chunk.js.map",
     "runtime-main.js": "/weird-flex-but-ok/static/js/runtime-main.234621d8.js",
     "runtime-main.js.map": "/weird-flex-but-ok/static/js/runtime-main.234621d8.js.map",
     "static/js/2.eebccfb3.chunk.js": "/weird-flex-but-ok/static/js/2.eebccfb3.chunk.js",
     "static/js/2.eebccfb3.chunk.js.map": "/weird-flex-but-ok/static/js/2.eebccfb3.chunk.js.map",
     "index.html": "/weird-flex-but-ok/index.html",
-    "precache-manifest.e62d4516eac7dd5be9524a8549dd3de2.js": "/weird-flex-but-ok/precache-manifest.e62d4516eac7dd5be9524a8549dd3de2.js",
+    "precache-manifest.9c1e13dec8fa0c32cb65edca8bfd085d.js": "/weird-flex-but-ok/precache-manifest.9c1e13dec8fa0c32cb65edca8bfd085d.js",
     "service-worker.js": "/weird-flex-but-ok/service-worker.js",
-    "static/css/main.2091c44b.chunk.css.map": "/weird-flex-but-ok/static/css/main.2091c44b.chunk.css.map",
+    "static/css/main.4851373e.chunk.css.map": "/weird-flex-but-ok/static/css/main.4851373e.chunk.css.map",
     "static/js/2.eebccfb3.chunk.js.LICENSE.txt": "/weird-flex-but-ok/static/js/2.eebccfb3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.234621d8.js",
     "static/js/2.eebccfb3.chunk.js",
-    "static/css/main.2091c44b.chunk.css",
-    "static/js/main.325df6de.chunk.js"
+    "static/css/main.4851373e.chunk.css",
+    "static/js/main.c696dac1.chunk.js"
   ]
 }

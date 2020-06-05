@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "10efe26a2b1742db22a02c73d4282d85",
+    "revision": "efcd17c83f632c9ef4603c767dbda83a",
     "url": "/weird-flex-but-ok/index.html"
   },
   {
-    "revision": "a07a228b91853090861e",
-    "url": "/weird-flex-but-ok/static/css/main.2091c44b.chunk.css"
+    "revision": "4a873e848360e3d07e34",
+    "url": "/weird-flex-but-ok/static/css/main.4851373e.chunk.css"
   },
   {
     "revision": "5bf05df879ffb678ed28",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/weird-flex-but-ok/static/js/2.eebccfb3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a07a228b91853090861e",
-    "url": "/weird-flex-but-ok/static/js/main.325df6de.chunk.js"
+    "revision": "4a873e848360e3d07e34",
+    "url": "/weird-flex-but-ok/static/js/main.c696dac1.chunk.js"
   },
   {
     "revision": "0717a8ad9b54c6244037",

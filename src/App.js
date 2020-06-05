@@ -101,7 +101,7 @@ const App = () => {
         {introduction && <SidebarIntroduction />}
         {!introduction && !complete && <SidebarContents level={currentLevel} />}
       </Sidebar>
-      <PuzzleContainer>
+      <PuzzleContainer padding={!complete}>
         {!introduction && !complete && (
           <>
             <div style={{ position: "absolute", top: 20, left: 20 }}>

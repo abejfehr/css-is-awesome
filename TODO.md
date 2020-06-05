@@ -1,8 +1,14 @@
 # So you think you know CSS
 
-- Add funny text to chapters/levels
+- Fix weird indentation on the CSS in some levels
+- Add better meta description and title
+- Make it obvious how to play the game
+  - Maybe a ghost box that resizes on the first level?
 - Add label to the container box
+  - not sure how I want to lay that out yet
 - Add educational links
+  - w3c
+  - blog posts
 - Add links to codepens/jsfiddles of complete examples
 - Make better theme for syntax highlighting and everything
 - Prevent position from getting out of sync

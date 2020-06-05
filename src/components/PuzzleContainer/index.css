@@ -1,6 +1,5 @@
 .Puzzle {
   background-color: var(--light-bg-color);
-  padding: 20px;
   flex: 3;
   display: flex;
   flex-direction: column;
