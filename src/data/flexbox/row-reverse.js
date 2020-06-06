@@ -1,7 +1,6 @@
-import { TAGS, CATEGORIES } from "../../constants";
+import { CATEGORIES } from "../../constants";
 
 export const rowReverse = {
-  name: "Direction 3",
   css: `
 .container {
   display: flex;
@@ -13,7 +12,6 @@ export const rowReverse = {
   <div class="box-2"></div>
 </div>`,
   container: {
-    subtext: "A twist",
     className: "container",
     x: 0,
     y: 0,

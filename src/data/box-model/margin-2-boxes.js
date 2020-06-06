@@ -1,7 +1,6 @@
-import { TAGS, CATEGORIES } from "../../constants";
+import { CATEGORIES } from "../../constants";
 
 export const margin2Boxes = {
-  name: "Margin w/ 2 boxes",
   css: `
 .b-1 {
   width: 200px;
@@ -19,7 +18,6 @@ export const margin2Boxes = {
   <div class="b-1"></div>
   <div class="b-2"></div>
 </div>`,
-  subtext: "The basics",
   container: {
     className: "container",
     x: 0,

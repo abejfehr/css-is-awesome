@@ -1,7 +1,6 @@
-import { TAGS, CATEGORIES } from "../../constants";
+import { CATEGORIES } from "../../constants";
 
 export const padding = {
-  name: "Padding",
   css: `
 .container {
   padding: 20px;
@@ -11,7 +10,6 @@ export const padding = {
 <div class="container">
   <div class="some-box"></div>
 </div>`,
-  subtext: "The basics",
   container: {
     className: "container",
     x: 0,

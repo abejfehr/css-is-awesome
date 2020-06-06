@@ -17,6 +17,7 @@ export const Puzzle = ({ rng, level, onInput }) => {
           <div className="Puzzle__h-center"></div>
           {level.boxes?.map((box, index) => (
             <Box
+              id={box.id}
               key={`${index}-${rng}`}
               passedClassName={box.className}
               label={`.${box.className}`}
@@ -25,7 +26,8 @@ export const Puzzle = ({ rng, level, onInput }) => {
               width={box.width}
               height={box.height}
               resizable={box.resizable}
-              // bounds={box.bounds} TODO: Revisit this one day
+              layer={box.layer}
+              // bounds={box.bounds} TODO: This is for making nested boxes
               onInput={onInput}
             />
           ))}

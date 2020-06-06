@@ -1,7 +1,6 @@
 import { CATEGORIES } from "../../constants";
 
 export const centered = {
-  name: "Alignment 2",
   css: `
 .container {
   display: flex;

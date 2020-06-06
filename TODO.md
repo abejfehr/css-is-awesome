@@ -1,13 +1,15 @@
 # So you think you know CSS
 
 WIP
-- Rename the game something else
+
 - Add educational links
   - w3c
   - blog posts
 
 TODO
+
 - Add option to play again after complete
+- Add an animation for completing the game
 - Maybe put the box coordinates/name on the right side in a "properties" area?
 - Add label to the container box
   - not sure how I want to lay that out yet
@@ -21,6 +23,7 @@ TODO
 - Let people share their progress
 
 TODIDN'T
+
 - Make boxes be bounded by other boxes
   - Putting this on hold right now since it's a weird experience if you move the parent outside the child
 - Add handles to the boxes to indicate affordances for dragging/resizing

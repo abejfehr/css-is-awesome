@@ -1,7 +1,6 @@
-import { TAGS, CATEGORIES } from "../../constants";
+import { CATEGORIES } from "../../constants";
 
 export const absoluteStacked = {
-  name: "Absolute Stacked",
   css: `
 .box-1 {
   width: 300px;
@@ -23,7 +22,6 @@ export const absoluteStacked = {
     <div class="inside-box"></div>
   </div>
 </div>`,
-  subtext: "The basics",
   container: {
     className: "container",
     x: 0,

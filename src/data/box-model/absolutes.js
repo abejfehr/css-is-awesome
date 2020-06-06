@@ -1,7 +1,6 @@
-import { TAGS, CATEGORIES } from "../../constants";
+import { CATEGORIES } from "../../constants";
 
 export const absolutes = {
-  name: "Absolute",
   css: `
 .container {
   position: relative;
@@ -16,7 +15,6 @@ export const absolutes = {
 <div class="container">
   <div class="box-1"></div>
 </div>`,
-  subtext: "The basics",
   container: {
     className: "container",
     x: 0,

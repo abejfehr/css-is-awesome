@@ -1,7 +1,6 @@
-import { TAGS, CATEGORIES } from "../../constants";
+import { CATEGORIES } from "../../constants";
 
 export const corners = {
-  name: "Margin w/ 2 boxes",
   css: `
 .container {
   position: relative;
@@ -22,7 +21,6 @@ export const corners = {
   <div class="a-box"></div>
   <div class="another-box"></div>
 </div>`,
-  subtext: "The basics",
   container: {
     className: "container",
     x: 0,

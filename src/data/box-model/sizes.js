@@ -1,7 +1,6 @@
-import { TAGS, CATEGORIES } from "../../constants";
+import { CATEGORIES } from "../../constants";
 
 export const sizes = {
-  name: "Box sizes",
   css: `
 .some-box {
   width: 300px;
@@ -12,7 +11,6 @@ export const sizes = {
 <div class="container">
   <div class="some-box"></div>
 </div>`,
-  subtext: "The basics",
   container: {
     className: "container",
     x: 0,

@@ -1,5 +1,6 @@
 import boxModel from "./box-model";
 import flexbox from "./flexbox";
+import advanced from "./advanced";
 
 export const chapters = [
   {
@@ -35,6 +36,6 @@ export const chapters = [
     funnyTitle: "CSS Wizardry",
     funnySubtitle: "In case you thought you knew CSS",
     description: "A few advanced techniques.",
-    levels: [],
+    levels: [...advanced],
   },
 ];

@@ -1,7 +1,6 @@
-import { TAGS, CATEGORIES } from "../../constants";
+import { CATEGORIES } from "../../constants";
 
 export const column = {
-  name: "Direction 2",
   css: `
 .container {
   display: flex;
@@ -12,7 +11,6 @@ export const column = {
   <div class="box-1"></div>
   <div class="box-2"></div>
 </div>`,
-  subtext: "The basics",
   container: {
     className: "container",
     x: 0,

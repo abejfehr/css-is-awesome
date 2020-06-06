@@ -1,7 +1,6 @@
-import { TAGS, CATEGORIES } from "../../constants";
+import { CATEGORIES } from "../../constants";
 
 export const stretched = {
-  name: "Alignment 3",
   css: `
 .container {
   display: flex;

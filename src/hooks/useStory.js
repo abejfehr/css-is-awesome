@@ -21,7 +21,7 @@ export const useStory = () => {
     }
 
     // Try to increment the chapter
-    if (chapters[chapterIndex + 1].levels[0]) {
+    if (chapters[chapterIndex + 1] && chapters[chapterIndex + 1].levels[0]) {
       setCurrentLevel(chapters[chapterIndex + 1].levels[0]);
       setChapterIndex(chapterIndex + 1);
       setLevelIndex(0);

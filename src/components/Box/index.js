@@ -3,6 +3,7 @@ import { Rnd } from "react-rnd";
 import "./index.css";
 
 export const Box = ({
+  id, // If given, makes the box unique even if className matches another's
   width: _width = 100,
   height: _height = 100,
   x: _x = 0,
@@ -11,6 +12,7 @@ export const Box = ({
   resizable = ["x", "y"],
   passedClassName,
   bounds = "parent",
+  layer = 0,
   onInput = () => {},
 }) => {
   const [x, setX] = useState(_x);
@@ -25,12 +27,13 @@ export const Box = ({
     if (boxEl.current) {
       document.querySelectorAll(".Box").forEach((el) => {
         if (boxEl.current !== el) {
-          el.style.zIndex = 1;
+          // TODO: Make this use the layer of `el` rather than the current box's layer
+          el.style.zIndex = layer * 10 + 1;
         }
       });
 
       // Increase this element's z-index
-      boxEl.current.style.zIndex = 10;
+      boxEl.current.style.zIndex = layer * 10 + 2;
     }
   };
 
@@ -43,9 +46,9 @@ export const Box = ({
         boxEl.current = event.target;
       }
 
-      onInput(passedClassName, ~~x, ~~y, ~~width, ~~height);
+      onInput(id, passedClassName, ~~x, ~~y, ~~width, ~~height);
     },
-    [x, y, width, height, onInput, passedClassName]
+    [x, y, width, height, onInput, passedClassName, id]
   );
 
   const handleResize = useCallback(
@@ -57,19 +60,19 @@ export const Box = ({
         boxEl.current = ref;
       }
 
-      onInput(passedClassName, ~~x, ~~y, ~~width, ~~height);
+      onInput(id, passedClassName, ~~x, ~~y, ~~width, ~~height);
     },
-    [x, y, width, height, onInput, passedClassName]
+    [x, y, width, height, onInput, passedClassName, id]
   );
 
   const handleDragStop = useCallback(() => {
     // Don't use this, it somehow breaks things
-    onInput(passedClassName, ~~x, ~~y, ~~width, ~~height);
-  }, [x, y, width, height, onInput, passedClassName]);
+    onInput(id, passedClassName, ~~x, ~~y, ~~width, ~~height);
+  }, [x, y, width, height, onInput, passedClassName, id]);
 
   const handleResizeStop = useCallback(() => {
-    onInput(passedClassName, ~~x, ~~y, ~~width, ~~height);
-  }, [x, y, width, height, onInput, passedClassName]);
+    onInput(id, passedClassName, ~~x, ~~y, ~~width, ~~height);
+  }, [x, y, width, height, onInput, passedClassName, id]);
 
   let resizeProps = {};
 

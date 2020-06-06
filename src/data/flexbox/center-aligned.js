@@ -1,7 +1,6 @@
 import { TAGS, CATEGORIES } from "../../constants";
 
 export const centerAligned = {
-  name: "Center Aligned",
   css: `
 .container {
   display: flex;
@@ -13,7 +12,6 @@ export const centerAligned = {
   <div class="box-2"></div>
 </div>`,
   container: {
-    subtext: "Lined up",
     className: "container",
     x: 0,
     y: 0,
