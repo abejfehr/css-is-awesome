@@ -28,12 +28,15 @@ export const Box = ({
       document.querySelectorAll(".Box").forEach((el) => {
         if (boxEl.current !== el) {
           // TODO: Make this use the layer of `el` rather than the current box's layer
-          el.style.zIndex = layer * 10 + 1;
+          const currentZIndex = getComputedStyle(el).getPropertyValue(
+            "z-index"
+          );
+          el.style.zIndex = Math.floor(currentZIndex / 10) * 10 + 1;
         }
       });
 
       // Increase this element's z-index
-      boxEl.current.style.zIndex = layer * 10 + 2;
+      boxEl.current.style.zIndex = layer * 10 + 5;
     }
   };
 
@@ -91,7 +94,7 @@ export const Box = ({
 
   return (
     <Rnd
-      className={`Box ${passedClassName}`}
+      className={`Box ${passedClassName} Box--layer-${layer}`}
       default={{
         x,
         y,
