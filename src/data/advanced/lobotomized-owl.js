@@ -23,10 +23,10 @@ export const lobotomizedOwl = {
   </div>
 </body>`,
   container: {
-    className: "body",
+    selector: "body",
     x: 0,
     y: 0,
-    width: 500,
+    width: 600,
     height: 500,
   },
   boxes: [

@@ -22,7 +22,7 @@ export const corners = {
   <div class="another-box"></div>
 </div>`,
   container: {
-    className: "container",
+    selector: ".container",
     x: 0,
     y: 0,
     width: 400,

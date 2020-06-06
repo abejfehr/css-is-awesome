@@ -13,6 +13,9 @@ export const Puzzle = ({ rng, level, onInput }) => {
             height: level.container.height,
           }}
         >
+          <div className="Puzzle__container-label">
+            {level.container.selector}
+          </div>
           <div className="Puzzle__v-center"></div>
           <div className="Puzzle__h-center"></div>
           {level.boxes?.map((box, index) => (

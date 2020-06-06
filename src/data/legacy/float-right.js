@@ -24,7 +24,7 @@ export const floatRight = {
   </div>
 </body>`,
   container: {
-    className: "body",
+    selector: "body",
     x: 0,
     y: 0,
     width: 500,

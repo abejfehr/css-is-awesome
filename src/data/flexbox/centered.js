@@ -12,7 +12,7 @@ export const centered = {
   <div class="box-1"></div>
 </div>`,
   container: {
-    className: "container",
+    selector: ".container",
     x: 0,
     y: 0,
     width: 400,

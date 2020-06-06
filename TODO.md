@@ -9,7 +9,7 @@ WIP
 TODO
 
 - Add option to play again after complete
-- Add an animation for completing the game
+- Add an animation after completing a level
 - Maybe put the box coordinates/name on the right side in a "properties" area?
 - Add label to the container box
   - not sure how I want to lay that out yet
@@ -46,3 +46,4 @@ Things to test people on:
   - not
   - attribute selectors
   - pseudoelements
+  - nth-child
