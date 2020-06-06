@@ -33,9 +33,16 @@ Things to test people on:
 
 - box model
   - negative margin
-- positioning
   - position: sticky;
 - flex
   - flex-wrap;
 - grid
   - display: grid;
+- legacy
+  - float: left;
+- advanced selectors
+  - child
+  - sibling
+  - not
+  - attribute selectors
+  - pseudoelements

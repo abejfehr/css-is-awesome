@@ -1,6 +1,7 @@
 import boxModel from "./box-model";
 import flexbox from "./flexbox";
 import advanced from "./advanced";
+import legacy from "./legacy";
 
 export const chapters = [
   {
@@ -29,7 +30,7 @@ export const chapters = [
     funnyTitle: "Stylesheets of a bygone era",
     funnySubtitle: "CSS was different before flexbox and grid",
     description: "A look at legacy layout techniques.",
-    levels: [],
+    levels: [...legacy],
   },
   {
     title: "Advanced Techniques",
