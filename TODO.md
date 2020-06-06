@@ -32,15 +32,10 @@ TODIDN'T
 Things to test people on:
 
 - box model
-  - box width/height
-  - margin
-  - padding
   - negative margin
 - positioning
-  - position: absolute;
   - position: sticky;
 - flex
   - flex-wrap;
 - grid
   - display: grid;
-- lobotomized owl
